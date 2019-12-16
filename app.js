@@ -26,7 +26,7 @@ const store = {
         'King of Red Lions',
         'Darunia',
         'Kaepora Gaebora',
-        'King Roam'
+        'King Rhoam'
       ],
       correctAnswer: 'King of Red Lions'
     },
