@@ -52,5 +52,13 @@ const store = {
     },
   ],
   questionNumber: 0,
-  score: 0
+  currentScore: 0
 };
+
+function questionTracker() {
+  questionNumber++;
+}
+
+function scoreTracker() {
+  currentScore++;
+}
