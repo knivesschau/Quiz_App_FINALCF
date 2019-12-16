@@ -1,43 +1,56 @@
-/**
- * Example store structure
- */
 const store = {
-  // 5 or more questions are required
   questions: [
     {
-      question: 'What color is broccoli?',
+      question: "What is the name of Link's fairy in Ocarina of Time?",
       answers: [
-        'red',
-        'orange',
-        'pink',
-        'green'
+        'Epona',
+        'Navi',
+        'Tatl',
+        'Saria'
       ],
-      correctAnswer: 'green'
+      correctAnswer: 'Navi'
     },
     {
-      question: 'What is the current year?',
+      question: 'Which of the following is NOT a usable item in A Link to the Past?',
       answers: [
-        '1970',
-        '2015',
-        '2019',
-        '2005'
+        'Book of Mudora',
+        'Bombos Medallion',
+        'Cane of Byrna',
+        'Wand of Wishes'
       ],
-      correctAnswer: '2019'
-    }
+      correctAnswer: 'Wand of Wishes'
+    },
+    {
+      question: 'What is the name of the talking sailboat in The Wind Waker?',
+      answers: [
+        'King of Red Lions',
+        'Darunia',
+        'Kaepora Gaebora',
+        'King Roam'
+      ],
+      correctAnswer: 'King of Red Lions'
+    },
+    {
+      question: "Who is the guardian of Koholint Island in Link's Awakening?",
+      answers: [
+        'Lanaryu',
+        'Dinraal',
+        'The Wind Fish',
+        'The Seven Sages'
+      ],
+      correctAnswer: 'The Wind Fish'
+    },
+    {
+      question: "Which of the following is NOT a cooking ingredient in Breath of the Wild?",
+      answers: [
+        'Passion Fruit',
+        'Monster Extract',
+        'Tabantha Wheat',
+        'Mighty Bananas'
+      ],
+      correctAnswer: 'Passion Fruit'
+    },
   ],
   questionNumber: 0,
   score: 0
 };
-
-/**
- *
- * Your app should include a render() function, that regenerates
- * the view each time the store is updated. See your course
- * material, consult your instructor, and reference the slides
- * for more details.
- *
- * NO additional HTML elements should be added to the index.html file.
- *
- * You may add attributes (classes, ids, etc) to the existing HTML elements, or link stylesheets or additional scripts if necessary
- *
- */
