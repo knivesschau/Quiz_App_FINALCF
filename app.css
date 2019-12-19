@@ -95,7 +95,7 @@ fieldset {
     input[type="radio"] {
         position: relative;
         left: 5px;
-        top: 15px;
+        top: 18px;
       }
 
     #next-question, #submit-button, #show-results {
@@ -266,19 +266,3 @@ fieldset {
         font-size: 18pt; 
     }
 } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
