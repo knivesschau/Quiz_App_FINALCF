@@ -11,14 +11,12 @@ body {
 h1 {
     font-weight: bolder;
     color: #9C39BC;
-    /* font-size: 36pt; */
 }
 
 h2 {
     font-weight: normal;
     font-style: italic;
     color: #0F2636;
-    /* font-size: 30pt; */
 }
 
 fieldset {
@@ -29,18 +27,16 @@ fieldset {
     font-weight: normal; 
     font-style: italic;
     color: #9C39BC;
-    /* font-size: 30pt; */
 }
 
 #quiz-form {
-    /* font-size: 20pt; */
     font-weight: bolder;
     color: #0F2636;
 }
 
 #question-tracker, #score-tracker {
-    font-weight: bold;
-    font-style: italic;
+    font-weight: lighter;
+    font-style: normal;
     color: #E4EFED;
     margin: 0;
 }
@@ -78,6 +74,15 @@ fieldset {
     color:#9C39BC;
 }
 
+input[type="button"]:hover {
+    background-color: #E1F1D0;
+}
+
+input[type="button"]:active {
+    background-color: #E1F1D0;
+    box-shadow: 0 5px #0F2636;
+    transform: translateY(4px);
+} 
 
 @media only screen and (min-width: 320px) {
     body {
@@ -89,16 +94,17 @@ fieldset {
     
     header, .main-quiz {
         background-color:rgb(20, 205, 240, 0.8);
+        box-shadow: 5px 5px 5px #0F2636;
     }
 
     header {
         margin-top: 200px;
-        border-radius: 40px;
+        border-radius: 25px;
     }
 
     .main-quiz {
         margin-top: 100px;
-        border-radius: 40px;
+        border-radius: 25px;
     }
 
     h1 {
@@ -107,6 +113,10 @@ fieldset {
 
     h2 {
         font-size: 14pt;
+    }
+
+    #start-quiz, #restart-quiz {
+        font-size: 12pt;
     }
 
     #quiz-form {
@@ -144,15 +154,9 @@ fieldset {
         font-size: 12pt; 
     }
 
-    #unanswered {
-        font-size: 12pt;
-    }
-
-    #correct {
-        font-size: 12pt;
-    }
-    
-    #incorrect {
+    #unanswered, #correct, #incorrect {
+        margin: auto;
+        margin-top: 15px;
         font-size: 12pt;
     }
 
@@ -191,6 +195,10 @@ fieldset {
         font-size: 24pt;
     }
 
+    #start-quiz, #restart-quiz {
+        font-size: 16pt;
+    }
+    
     #quiz-form {
         display: flex;
         flex-direction: column;
@@ -227,15 +235,9 @@ fieldset {
         font-size: 14pt; 
     }
 
-    #unanswered {
-        font-size: 16pt;
-    }
-
-    #correct {
-        font-size: 16pt;
-    }
-    
-    #incorrect {
+    #unanswered, #correct, #incorrect {
+        margin: auto;
+        margin-top: 15px;
         font-size: 16pt;
     }
     
@@ -247,12 +249,12 @@ fieldset {
 @media only screen and (min-width: 800px) {
     header {
         margin-top: 200px;
-        border-radius: 15px;
+        border-radius: 90px;
     }
 
     .main-quiz {
         margin-top: 200px;
-        border-radius: 15px;
+        border-radius: 85px;
     }
 
     h1 {
@@ -261,6 +263,10 @@ fieldset {
 
     h2 {
         font-size: 30pt;
+    }
+
+    #start-quiz, #restart-quiz {
+        font-size: 18pt;
     }
 
     #quiz-form {
@@ -287,15 +293,9 @@ fieldset {
         font-size: 18pt; 
     }
 
-    #unanswered {
-        font-size: 20pt;
-    }
-
-    #correct {
-        font-size: 20pt;
-    }
-    
-    #incorrect {
+    #unanswered, #correct, #incorrect {
+        margin: auto;
+        margin-top: 15px;
         font-size: 20pt;
     }
     
@@ -307,12 +307,12 @@ fieldset {
 @media only screen and (min-width: 1000px) {
     header {
         margin-top: 200px;
-        border-radius: 10px;
+        border-radius: 70px;
     }
 
     .main-quiz {
         margin-top: 200px;
-        border-radius: 10px;
+        border-radius: 50px;
     }
 
     h1 {
@@ -321,6 +321,10 @@ fieldset {
 
     h2 {
         font-size: 42pt;
+    }
+
+    #start-quiz, #restart-quiz {
+        font-size: 20pt;
     }
 
     #quiz-form {
@@ -351,15 +355,9 @@ fieldset {
         font-size: 20pt; 
     }
 
-    #unanswered {
-        font-size: 24pt;
-    }
-
-    #correct {
-        font-size: 24pt;
-    }
-    
-    #incorrect {
+    #unanswered, #correct, #incorrect {
+        margin: auto;
+        margin-top: 15px;
         font-size: 24pt;
     }
     
