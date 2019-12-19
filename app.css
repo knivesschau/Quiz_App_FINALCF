@@ -60,7 +60,7 @@ fieldset {
     border-style: inset;
     border-color: transparent;
     background-color: rgba(0,0,0,0.4);
-    font-weight: bold;
+    font-weight: normal;
     color: #BADE37;
 }
 
@@ -69,12 +69,17 @@ fieldset {
     border-style: inset;
     border-color: transparent;
     background-color: rgba(0,0,0,0.4);
-    font-weight: bold;
+    font-weight: normal;
     color: #ff9494;
 }
 
+.above-5, .below-5 {
+    font-weight: normal;
+    color:#9C39BC;
+}
 
-@media only screen and (min-width: 320px) and (min-height: 568px) {
+
+@media only screen and (min-width: 320px) {
     body {
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -150,6 +155,10 @@ fieldset {
     #incorrect {
         font-size: 12pt;
     }
+
+    .above-5, .below-5 {
+        font-size: 14pt;
+    }
 }
 
 @media only screen and (min-width: 550px) {
@@ -217,6 +226,22 @@ fieldset {
         justify-content: center;
         font-size: 14pt; 
     }
+
+    #unanswered {
+        font-size: 16pt;
+    }
+
+    #correct {
+        font-size: 16pt;
+    }
+    
+    #incorrect {
+        font-size: 16pt;
+    }
+    
+    .above-5, .below-5 {
+        font-size: 24pt;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -235,29 +260,47 @@ fieldset {
     }
 
     h2 {
-        font-size: 32pt;
+        font-size: 30pt;
     }
 
     #quiz-form {
-        font-size: 20pt;
+        font-size: 22pt;
     }
 
     #question-text {
-        font-size: 24pt;
+        font-size: 26pt;
     } 
 
     input[type="radio"] {
         position: relative;
-        left: 175px;
+        left: 165px;
         top: 25px;
       }
 
     #next-question, #submit-button, #show-results {
+        margin-top: 25px;
+        margin-bottom: 25px;
         font-size: 18pt;
     }
     
     #question-tracker, #score-tracker {
-        font-size: 16pt; 
+        font-size: 18pt; 
+    }
+
+    #unanswered {
+        font-size: 20pt;
+    }
+
+    #correct {
+        font-size: 20pt;
+    }
+    
+    #incorrect {
+        font-size: 20pt;
+    }
+    
+    .above-5, .below-5 {
+        font-size: 30pt;
     }
 } 
 
@@ -281,7 +324,7 @@ fieldset {
     }
 
     #quiz-form {
-        font-size: 24pt;
+        font-size: 26pt;
     }
 
     #question-text {
@@ -294,15 +337,33 @@ fieldset {
 
     input[type="radio"] {
         position: relative;
-        left: 250px;
+        left: 230px;
         top: 25px;
       }
 
     #next-question, #submit-button, #show-results {
+        margin-top: 35px;
+        margin-bottom: 35px;
         font-size: 20pt;
     }
     
     #question-tracker, #score-tracker {
-        font-size: 18pt; 
+        font-size: 20pt; 
+    }
+
+    #unanswered {
+        font-size: 24pt;
+    }
+
+    #correct {
+        font-size: 24pt;
+    }
+    
+    #incorrect {
+        font-size: 24pt;
+    }
+    
+    .above-5, .below-5 {
+        font-size: 42pt;
     }
 } 

@@ -148,12 +148,12 @@ function resultPage(){
   const resultPageHTML = 
   `<header role="banner">
   <h1 class="title-results">Final Results</h1>
-  <h2 class="final-score">Your final score was ${STORE.currentScore} out of 10!</h2>
-  </header>
-  <main id="results-page">`
+  <h2 class="final-score">Your final score was ${STORE.currentScore} out of 10!</h2>`
   
   const restartButton = 
-  `<fieldset id="restart-button">
+  `
+  <main id="results-page">
+  <fieldset id="restart-button">
   <form id="end-page">
   <input type="button" id="restart-quiz" aria-label="Restart Quiz Button" value="Click to Try Again!"></input>
   </form>
@@ -161,10 +161,10 @@ function resultPage(){
   </main>`
 
   if (STORE.currentScore >= 5) {
-    $('body').html(resultPageHTML + `<p class="above-5">Nice job! You're a Zelda whiz!</p>` + restartButton);
+    $('body').html(resultPageHTML + `<h3 class="above-5">Nice job! You're a Zelda whiz!</h3></header>` + restartButton);
   }
   else if (STORE.currentScore < 5) {
-    $('body').html(resultPageHTML + `<p class="below-5">It looks like you need to brush up on your Zelda knowledge!</p>` + restartButton);
+    $('body').html(resultPageHTML + `<h3 class="below-5">It looks like you need to brush up on your Zelda knowledge!</h3></header>` + restartButton);
   }
 }
 
