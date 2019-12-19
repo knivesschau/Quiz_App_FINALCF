@@ -10,14 +10,14 @@ body {
 
 h1 {
     font-weight: bolder;
-    color: #0F2636;
+    color: #9C39BC;
     /* font-size: 36pt; */
 }
 
 h2 {
     font-weight: normal;
     font-style: italic;
-    color: #465E32;
+    color: #0F2636;
     /* font-size: 30pt; */
 }
 
@@ -28,25 +28,53 @@ fieldset {
 #question-text {
     font-weight: normal; 
     font-style: italic;
-    color: #F3FBD3;
+    color: #9C39BC;
     /* font-size: 30pt; */
 }
 
 #quiz-form {
     /* font-size: 20pt; */
     font-weight: bolder;
-    color: #465E32;
+    color: #0F2636;
 }
 
 #question-tracker, #score-tracker {
     font-weight: bold;
     font-style: italic;
-    color: #383E41;
+    color: #E4EFED;
     margin: 0;
 }
 
+#unanswered {
+    border-width: 5px;
+    border-style: inset;
+    border-color: transparent;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-weight: normal;
+    font-style: italic;
+    color: #EAAE12;
+}
 
-@media only screen and (min-width: 320px) {
+#correct {
+    border-width: 5px;
+    border-style: inset;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    color: #BADE37;
+}
+
+#incorrect {
+    border-width: 5px;
+    border-style: inset;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.4);
+    font-weight: bold;
+    color: #ff9494;
+}
+
+
+@media only screen and (min-width: 320px) and (min-height: 568px) {
     body {
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -69,18 +97,18 @@ fieldset {
     }
 
     h1 {
-        font-size: 18pt;
+        font-size: 16pt;
     }
 
     h2 {
-        font-size: 16pt;
+        font-size: 14pt;
     }
 
     #quiz-form {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     #question-text {
@@ -89,7 +117,7 @@ fieldset {
         flex-wrap: wrap;
         text-align: left;
         margin-bottom: 10px;
-        font-size: 16pt;
+        font-size: 14pt;
     } 
 
     input[type="radio"] {
@@ -102,13 +130,25 @@ fieldset {
         margin: auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: 14pt;
+        font-size: 12pt;
     }
     
     #question-tracker, #score-tracker {
         display: flex;
         flex-direction: row;
         font-size: 12pt; 
+    }
+
+    #unanswered {
+        font-size: 12pt;
+    }
+
+    #correct {
+        font-size: 12pt;
+    }
+    
+    #incorrect {
+        font-size: 12pt;
     }
 }
 

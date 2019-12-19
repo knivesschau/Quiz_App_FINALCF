@@ -230,7 +230,7 @@ function answerChecker() {
   else if (answerChoice !== STORE.questions[STORE.questionNumber].correctAnswer) {
     questionTracker(); 
     buttonSwitch(); 
-    $("#next-question").before(`<p id="incorrect"> Not quite! The correct answer is ${STORE.questions[STORE.questionNumber - 1].correctAnswer}. 
+    $("#next-question").before(`<p id="incorrect"> Not quite! The correct answer is: ${STORE.questions[STORE.questionNumber - 1].correctAnswer}. 
     Your current score is ${STORE.currentScore} out of 10.</p>`)
   }
 };
