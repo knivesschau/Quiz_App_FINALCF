@@ -202,7 +202,7 @@ $("#show-results").hide();
 
 //this function toggles the buttons on every question page depending on user interaction.
 function buttonSwitch() {
-  $("#no-answer").remove();
+  $("#unanswered").remove();
   $("#submit-button").hide();
   
   if (STORE.questionNumber < 10) {
@@ -216,7 +216,7 @@ function buttonSwitch() {
 //this function checks the user's answers against the STORE with textual feedback if they are right/wrong. if they don't answer, they will be prevented from progressing.
 function answerChecker() {
   console.log('answerChecker ran')
-  $("#no-answer").remove();
+  $("#unanswered").remove();
   const answerChoice = $("input[name='answer-selections']:checked").val();
   if (answerChoice === undefined) {
     $("#next-question").before(`<p id="unanswered">Please select an answer.</p>`);
@@ -280,4 +280,5 @@ function quizRender() {
   }
 }
 
+//loads button functionality to the DOM immmediately
 $(buttonInitialize);
