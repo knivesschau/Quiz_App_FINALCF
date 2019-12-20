@@ -1,5 +1,4 @@
 * {
-    font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
     text-align: center;
 }
@@ -9,14 +8,24 @@ body {
 }
 
 h1 {
+    font-family: "Ubuntu", sans-serif;
     font-weight: bolder;
     color: #9C39BC;
 }
 
 h2 {
+    font-family: 'Lora', serif;
     font-weight: normal;
     font-style: italic;
     color: #0F2636;
+}
+
+h3 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+input[type="button"] {
+    font-family: "Ubuntu", sans-serif;
 }
 
 fieldset {
@@ -24,17 +33,20 @@ fieldset {
 }
 
 #question-text {
-    font-weight: normal; 
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold; 
     font-style: italic;
     color: #9C39BC;
 }
 
 #quiz-form {
-    font-weight: bolder;
+    font-family: 'Lora', serif;
+    font-weight: normal;
     color: #0F2636;
 }
 
 #question-tracker, #score-tracker {
+    font-family: "Ubuntu", sans-serif;
     font-weight: lighter;
     font-style: normal;
     color: #E4EFED;

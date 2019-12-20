@@ -125,12 +125,12 @@ function homePage() {
   console.log('homePage ran');
   
   const homePageHTML = 
-  `<header role="banner">
+  `<header role="banner" aria-live="polite">
   <h1 class="title-homepage"> The Legend of Zelda Trivia Quiz </h1>
   <h2 class="secondary-text"> How much do you know about this beloved series? </h2>
   </header>
 
-  <main id="home-page">
+  <main id="home-page" aria-live="polite">
   <form id="start-page">
   <fieldset id ="starter-button">
   <input type="button" id="start-quiz" aria-label="Start Quiz Button" value="Let's Find Out!"></input>
@@ -146,13 +146,13 @@ function resultPage(){
   console.log('resultPage ran');
   
   const resultPageHTML = 
-  `<header role="banner">
+  `<header role="banner" aria-live="polite">
   <h1 class="title-results">Final Results</h1>
   <h2 class="final-score">Your final score was ${STORE.currentScore} out of 10!</h2>`
   
   const restartButton = 
   `
-  <main id="results-page">
+  <main id="results-page" aria-live="polite">
   <fieldset id="restart-button">
   <form id="end-page">
   <input type="button" id="restart-quiz" aria-label="Restart Quiz Button" value="Click to Try Again!"></input>
@@ -173,7 +173,7 @@ function questionGenerator() {
   console.log('questionGenerator ran')
 
   const questionText = 
-  `<main class = "main-quiz">
+  `<main class = "main-quiz" aria-live="polite">
   <fieldset id="quiz-questions-answers">
   <form id="quiz-form">
   <legend id="question-text">${STORE.questions[STORE.questionNumber].question}</legend>`
