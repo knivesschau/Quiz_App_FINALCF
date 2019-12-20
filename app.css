@@ -365,3 +365,12 @@ input[type="button"]:active {
         font-size: 42pt;
     }
 } 
+
+/* for larger computer screens */
+@media only screen and (min-width: 1200px) {
+    input[type="radio"] {
+        position: relative;
+        left: 325px;
+        top: 25px;
+      }
+}
