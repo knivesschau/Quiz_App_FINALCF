@@ -175,10 +175,6 @@ input[type="button"]:active {
     .above-5, .below-5 {
         font-size: 14pt;
     }
-
-    input[type="button"]:hover {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 550px) {
