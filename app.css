@@ -86,10 +86,6 @@ fieldset {
     color:#9C39BC;
 }
 
-input[type="button"]:hover {
-    background-color: #E1F1D0;
-}
-
 input[type="button"]:active {
     background-color: #E1F1D0;
     box-shadow: 0 5px #0F2636;
@@ -259,12 +255,6 @@ input[type="button"]:active {
 }
 
 @media only screen and (min-width: 800px) {
-    body {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-size: cover;
-    }
     
     header {
         margin-top: 200px;
@@ -324,13 +314,6 @@ input[type="button"]:active {
 } 
 
 @media only screen and (min-width: 1000px) {
-    
-    body {
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-size: cover;
-    }
     
     header {
         margin-top: 200px;
