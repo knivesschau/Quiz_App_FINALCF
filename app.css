@@ -259,6 +259,13 @@ input[type="button"]:active {
 }
 
 @media only screen and (min-width: 800px) {
+    body {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+    }
+    
     header {
         margin-top: 200px;
         border-radius: 90px;
@@ -317,6 +324,14 @@ input[type="button"]:active {
 } 
 
 @media only screen and (min-width: 1000px) {
+    
+    body {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: cover;
+    }
+    
     header {
         margin-top: 200px;
         border-radius: 70px;
