@@ -153,11 +153,11 @@ function resultPage(){
   const restartButton = 
   `
   <main id="results-page" aria-live="polite">
-  <fieldset id="restart-button">
   <form id="end-page">
+  <fieldset id="restart-button">
   <input type="button" id="restart-quiz" aria-label="Restart Quiz Button" value="Click to Try Again!"></input>
-  </form>
   </fieldset>
+  </form>
   </main>`
 
   if (STORE.currentScore >= 5) {
@@ -174,12 +174,18 @@ function questionGenerator() {
 
   const questionText = 
   `<main class = "main-quiz" aria-live="polite">
-  <fieldset id="quiz-questions-answers">
   <form id="quiz-form">
+  <fieldset id="quiz-questions-answers">
   <legend id="question-text">${STORE.questions[STORE.questionNumber].question}</legend>`
 
   const answerText = STORE.questions[STORE.questionNumber].answers.map(answer => {
-    return `<input type="radio" name="answer-selections" aria-label="Select Answer" value="${answer}">${answer}</input>`
+    return `
+    <ul>
+    <li>
+    <input type="radio" name="answer-selections" aria-label="Select Answer"><label for=${answer}>${answer}</label>
+    </input>
+    </li>
+    </ul>`
   }); 
 
   const quizButtons = 
@@ -191,8 +197,8 @@ function questionGenerator() {
   `
   <p id="question-tracker">Question ${STORE.questionNumber + 1} out of 10</p>
   <p id="score-tracker">Your current score is: ${STORE.currentScore} out of 10</p>
-  </form>
   </fieldset>
+  </form>
   </main>`
 
 $('body').html(questionText + answerText.join('') + quizButtons + infoTrackers)
