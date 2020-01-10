@@ -101,7 +101,7 @@ ul {
 }
 
 input[type="radio"] {
-    display: inline-flex;   
+    display: inline-flex;  
 }
 
 label {
@@ -158,6 +158,10 @@ label {
         padding-bottom: 10px;
     }
 
+    input[type="radio"] {
+        margin: -1px;
+    }
+
     #start-quiz, #restart-quiz {
         font-size: 12pt;
     }
@@ -174,6 +178,7 @@ label {
         flex-direction: column;
         flex-wrap: wrap;
         text-align: left;
+        padding-top: 20px;
         margin-bottom: 10px;
         font-size: 14pt;
     } 
@@ -234,9 +239,11 @@ label {
     }
 
     ul {
-        display: flex;
-        justify-content: center;
-        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    input[type="radio"] {
+        margin: 1px;
     }
 
     #start-quiz, #restart-quiz {
@@ -303,6 +310,10 @@ label {
         font-size: 28pt;
     }
 
+    ul {
+        padding-left: 100px;
+    }
+
     #start-quiz, #restart-quiz {
         font-size: 18pt;
     }
@@ -312,7 +323,7 @@ label {
     }
 
     #question-text {
-        font-size: 24pt;
+        font-size: 24pt; 
     } 
 
     #next-question, #submit-button, #show-results {
@@ -372,6 +383,14 @@ label {
         font-size: 40pt;
     }
 
+    ul {
+        padding-left: 150px;
+    }
+
+    input[type="radio"] {
+        margin: 5px;
+    }
+
     #start-quiz, #restart-quiz {
         font-size: 20pt;
     }
@@ -384,6 +403,7 @@ label {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        padding-top: 25px;
         font-size: 30pt;       
     } 
 
@@ -398,8 +418,6 @@ label {
     }
 
     #unanswered, #correct, #incorrect {
-        margin-left: 350px;
-        margin-right: 350px;
         margin-top: 15px;
         font-size: 24pt;
     }
@@ -423,6 +441,28 @@ label {
 
     label {
         position: relative;
-        margin: 0px 20px 0px 20px;
+        margin: 5px 10px 5px 10px;
+    }
+
+    ul {
+        padding-left: 200px;
+    }
+
+    #unanswered, #correct, #incorrect {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 15px;
+        font-size: 24pt;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    ul {
+        padding-left: 700px;
+    }
+
+    #unanswered, #correct, #incorrect {
+        margin-left: 200px;
+        margin-right: 200px;
     }
 }
