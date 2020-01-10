@@ -110,19 +110,16 @@ const STORE = {
 
 //this function increments the question number as the user goes through each question.
 function questionTracker() {
-  console.log('questionTracker ran');
   STORE.questionNumber++;
 }
 
 //this function increments the user score if they answer correctly.
 function scoreTracker() {
-  console.log('scoreTracker ran');
   STORE.currentScore++;
 }
 
 //this function holds the HTML for the quiz's landing page. 
 function homePage() {
-  console.log('homePage ran');
   
   const homePageHTML = 
   `<header role="banner" aria-live="polite">
@@ -143,7 +140,6 @@ function homePage() {
 
 //this function holds the HTML for the quiz's final results page. 
 function resultPage(){
-  console.log('resultPage ran');
   
   const resultPageHTML = 
   `<header role="banner" aria-live="polite">
@@ -170,8 +166,7 @@ function resultPage(){
 
 //this function renders the HTML for all questions/answer choices, as well as the user's score/question progress.
 function questionGenerator() {
-  console.log('questionGenerator ran')
-
+  
   const questionText = 
   `<main class = "main-quiz" aria-live="polite">
   <form id="quiz-form">
@@ -182,7 +177,7 @@ function questionGenerator() {
     return `
     <ul>
     <li>
-    <input type="radio" name="answer-selections" aria-label="Select Answer"><label for=${answer}>${answer}</label>
+    <input type="radio" name="answer-selections" aria-label="Select Answer" value="${answer}"><label for=${answer}>${answer}</label>
     </input>
     </li>
     </ul>`
@@ -208,6 +203,7 @@ $("#show-results").hide();
 
 //this function toggles the buttons on every question page depending on user interaction.
 function buttonSwitch() {
+  
   $("#unanswered").remove();
   $("#submit-button").hide();
   
@@ -221,7 +217,7 @@ function buttonSwitch() {
 
 //this function checks the user's answers against the STORE with textual feedback if they are right/wrong. if they don't answer, they will be prevented from progressing.
 function answerChecker() {
-  console.log('answerChecker ran')
+  
   $("#unanswered").remove();
   const answerChoice = $("input[name='answer-selections']:checked").val();
   if (answerChoice === undefined) {
@@ -241,9 +237,9 @@ function answerChecker() {
   }
 };
 
-//this function implements button functionality to load immediately into the DOM to work in tandem with the quizRender() function. 
+//this function implements button functionality into the DOM to work in tandem with the quizRender() function. 
 function buttonInitialize() {
-console.log('buttonInitialize ran');
+
 $(document).on("click", "#start-quiz", function(event) {
     STORE.quizStart = true; 
     quizRender(); 
@@ -273,7 +269,7 @@ quizRender();
 
 //this function renders the appropriate quiz HTML page based on several checks on the user's progress AND their button interactions. 
 function quizRender() {
-  console.log('quizRender ran');
+  
   if (STORE.quizStart === false) {
     homePage();
   }
@@ -286,5 +282,5 @@ function quizRender() {
   }
 }
 
-//loads button functionality to the DOM immmediately
+//loads button functionality to the DOM immmediately.
 $(buttonInitialize);
